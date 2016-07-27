@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if !IE]><!-->
+	    <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+         <!--<![endif]-->
+    
+        <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="CSS/ie_mystyle.css">
+        <![endif]-->
+        <script type="text/javascript" src="JS/jQuery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="JS/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="JS/myscript.js"></script>
+        <script>
+            $(function(){
+                $(".ah-row2").slimScroll({
+                height: '150px',
+                size: '6px',
+                position: 'right',
+                color: '#a9a9aa',
+                alwaysVisible: false,
+                distance: '4px',
+                wheelStep: 10,
+                allowPageScroll: false,
+                disableFadeOut: true
+                });
+            });
+        </script>
+        <title>.:::TodoList:::.</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="ah-child-wrapper">
+                <header>
+                    <span><img id="ah-header-img" src="Imgs/list.png" width="32" height="32"></span>
+                    <span id="ah-header-heading">What your plans for today?</span>
+                </header>
+                <div class="ah-content-area">
+                    <div class="ah-row1">
+                        <span id="ah-content-txttaskname">
+                            <input id="txtName" type="text" placeholder="Enter Task Name Here & Hit Enter to Save" maxlength="45">
+                            <input type="image" src="Imgs/add.png" width="24px" height="24px" >
+                        </span>
+                        <span id="ah-content-lblshowtasks"><center>Show Tasks</center></span>
+                    </div>
+                    <div class="ah-row2">
+                        <ul id="ah-row-tasks-list">
+                        </ul>
+                    </div>
+                </div>
+                <footer>
+                    <div class="ah-social-icon">
+                        <ul>
+                            <li>
+                                <span class="circle">
+                                    <a href="https://www.facebook.com/ahmeraliahsan"><img src="Imgs/facebook.png" alt="facebook"></a>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="circle">
+                                    <a href="https://github.com/AhmerAli"><img src="Imgs/github.png" alt="facebook"></a>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="circle">
+                                    <a href="https://stackoverflow.com/users/5869145/ahmer-ali-ahsan"><img src="Imgs/stackoverflow.png" alt="facebook"></a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                    <span id="ah-footer-company">Copyright &copy; | 2016 Ahmer Ali Ahsan</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, .wrapper {
+    height: 100% !important;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Some Standards*/
+
+a {
+    text-decoration: none;
+}
+
+/*Custom Styles*/
+.wrapper {
+    width: 100%;
+    background-color: #039BE5 !important;
+}
+.wrapper .ah-child-wrapper {
+    width: 20%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+.ah-child-wrapper header {
+    border-bottom:  1px solid #ccc;
+}
+
+.ah-child-wrapper .ah-content-area {
+    border-bottom:  1px solid #ccc;
+}
+
+.ah-child-wrapper header, footer{
+    max-height: 50px; 
+}
